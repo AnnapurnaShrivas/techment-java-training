@@ -1,0 +1,30 @@
+package Logic_building;
+
+import java.util.Scanner;
+
+public class Excercise29 {
+
+	
+	public static void main(String args[]) {
+	       Scanner scanner = new Scanner(System.in);
+	       System.out.print("Enter first angle: ");
+	       int a1 = scanner.nextInt();
+	       System.out.print("Enter second angle: ");
+	       int a2 = scanner.nextInt();
+	       System.out.print("Enter third angle: ");
+	       int a3 = scanner.nextInt();
+	       int angleSum = a1 + a2 + a3;
+	       
+	       if (angleSum == 180 && a1 > 0 && a2 > 0 && a3 > 0) {
+	          if (a1 == 90 || a2 == 90 || a3 == 90) {
+	               System.out.println("Right-angled Triangle");
+	           }
+	           else {
+	               System.out.println("Not right angle triangle");
+	           }
+	       }
+	       else {
+	           System.out.println("Triangle not possible");
+	       }
+	   }
+}
